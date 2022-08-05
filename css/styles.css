@@ -885,10 +885,10 @@ color: var(--primary-text-color);
     margin-right: 10px;
 }
 
-.modal-form-check:checked + .modal-form-check-desc::before {
+/* .modal-form-check:checked + .modal-form-check-desc::before {
     background-color: var(--accent-color);
     box-shadow: inset 0 0 0 4px rgb(255, 255, 255);
-}
+} */
 
 /* .modal-form-check:focus + .modal-form-check-desc::before {
     outline: 2px solid rgba(0, 0, 255, 0.5);
@@ -912,7 +912,7 @@ color: var(--primary-text-color);
     text-transform: uppercase;
     transition: var(--transition-timing-function);
     transition: var(--transition-duration);
-    
+    box-shadow: var(--shadow);
     
 
 }
