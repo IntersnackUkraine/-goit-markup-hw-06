@@ -867,17 +867,22 @@ color: var(--primary-text-color);
 }
 
 .modal-form-check-desc {
-    
     display: flex;
     align-items: center;
     font-size: 14px;
     margin-bottom: 20px;
+    cursor: pointer;
+    /* transition: var(--transition-duration);
+    transition: var(--transition-timing-function); */
 }
-
+.modal-form-check:focus ~ .modal-form-check-desc {
+    color: var(--logo-color-blue-blue);
+    
+}
 .modal-form-check-desc::before {
     display: flex;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 15px;
     border: 1px solid #757575f3;
     content: '';
     cursor: pointer;
@@ -886,15 +891,10 @@ color: var(--primary-text-color);
 }
 
 .modal-form-check:checked + .modal-form-check-desc::before {
-    background-image: url();
+    border-color: var(--logo-color-blue-blue);
     background-color: var(--logo-color-blue-blue);
-    /* box-shadow: inset 0 0 0 4px rgb(255, 255, 255); */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m1.957 4.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3e%3c/svg%3e");
 }
-
-/* .modal-form-check:focus + .modal-form-check-desc::before {
-    outline: 2px solid rgba(0, 0, 255, 0.5);
-} */
-
 .modal-form-submit {
     color: var(--main-header-background-size);
     background-color: #2196F3;
@@ -931,4 +931,73 @@ color: var(--primary-text-color);
     clip: rect(0 0 0 0);
 }
 /* ========================  /VODAL FORM  ==================== */
+/* =============================twitter============================ */
+.email-form {
+  margin-left: auto;
+  color: var(--main-background-section-button);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.1428;
+  font-style: normal;
+}
+
+.email-form p{
+  margin-bottom: 20px;
+}
+
+.email-form .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 28px;
+  margin-left: 12px;
+  font-weight: 700;
+  color: currentColor;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color:#2196f3;
+  border: none;
+  text-align: center;
+}
+
+.email-form .button:hover,
+.email-form .button:focus {
+  background-color: #188ce8;
+}
+
+.email-form-icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
+
+/* .email-form .input {
+  
+} */
+
+.input {
+  outline: none;
+  color: currentColor;
+  background-color: transparent;
+
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);;
+  border-radius: 4px;
+  width: 358px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.email-form .input:hover,
+.email-form .input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.email-form .input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
 

@@ -400,9 +400,21 @@
           </li>
         </ul>
       </div>
+              <form class="email-form uppercase" autocomplete="on" novalidate>
+                <div class="email-form-wrapper" role="group" aria-labelledby="email-input">
+                  <p>ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                  <input type="email" name="email" id="footer-email" class="input" placeholder="E-mail" />
+                  <button type="submit" class="button">
+                    Подписаться
+                    <svg class="email-form-icon" height="24" width="24">
+                      <use href="./images/sprite.svg#telegg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
     </div>
   </footer>
-  <div class="backdrop is-hidden3" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       
       <button type="button" class="modal-close-btn" data-modal-close>
@@ -421,7 +433,7 @@
             <input type="text" 
             name="user_name" 
             class="modal-form-input" 
-            required pattern="^[A-Za-zА-Яа-яЁё]+$" 
+            required pattern="^[A-Za-zА-Яа-яЁё-Яа-яЁёІіЇїЄє]+$" 
             minlength="2"
             />
             <svg class="modal-form-input-icon" height="18" width="18">
@@ -448,7 +460,7 @@
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Почта</span>
             <span class="modal-form-input-wrapper">
-            <input type="text" class="modal-form-input" required />
+            <input type="email" class="modal-form-input" required />
             <svg class="modal-form-input-icon" height="18" width="18">
               <use href="./images/sprite.svg#icon-email"></use>
             </svg>
@@ -467,8 +479,7 @@
               type="checkbox" 
               name="user_policy"
               class="modal-form-check visually-hidden"
-
-              />      
+              />
               <label for="user-policy" class="modal-form-check-desc">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="linkk">Условия договора</a></label>
               <button type="submit" class="modal-form-submit">Отправить</button>
         </form>
