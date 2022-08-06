@@ -872,8 +872,6 @@ color: var(--primary-text-color);
     font-size: 14px;
     margin-bottom: 20px;
     cursor: pointer;
-    /* transition: var(--transition-duration);
-    transition: var(--transition-timing-function); */
 }
 .modal-form-check:focus ~ .modal-form-check-desc {
     color: var(--logo-color-blue-blue);
@@ -883,17 +881,22 @@ color: var(--primary-text-color);
     display: flex;
     width: 16px;
     height: 15px;
-    border: 1px solid #757575f3;
+    /* border: 0px solid var(--border-top-color); */
     content: '';
     cursor: pointer;
-    border-radius: 4px;
+    
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14 2v11H2V2h12Zm0-2H2L0 2v11l2 2h12l2-2V2l-2-2Z' fill='%23212121'/%3e%3c/svg%3e");
+
+    /* border-radius: 4px; */
     margin-right: 10px;
 }
 
 .modal-form-check:checked + .modal-form-check-desc::before {
     border-color: var(--logo-color-blue-blue);
     background-color: var(--logo-color-blue-blue);
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m1.957 4.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3e%3c/svg%3e");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2 5 1 6l3 3h1l7-7-1-1-7 6-2-2Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3e%3c/svg%3e");
 }
 .modal-form-submit {
     color: var(--main-header-background-size);
@@ -961,18 +964,17 @@ color: var(--primary-text-color);
     background-color:#2196f3;
     border: none;
     text-align: center;
+    transition: var(--transition-timing-function);
+    transition: var(--transition-duration);
 }
-
 .email-form .button:hover,
 .email-form .button:focus {
     background-color: #188ce8;
 }
-
 .email-form-icon {
     fill: currentColor;
     margin-left: 10px;
 }
-
 .input {
     outline: none;
     color: currentColor;
@@ -988,12 +990,10 @@ color: var(--primary-text-color);
     line-height: 1.25;
     letter-spacing: 0.03em;
 }
-
 .email-form .input:hover,
 .email-form .input:focus {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 .email-form .input::placeholder {
     color: rgba(255, 255, 255, 0.3);
 }
