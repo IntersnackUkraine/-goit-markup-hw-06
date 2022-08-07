@@ -934,7 +934,7 @@ color: var(--primary-text-color);
     clip: rect(0 0 0 0);
 }
 /* ========================  /VODAL FORM  ==================== */
-/* =============================twitter============================ */
+/* =========SUBSCRIBE FOR THE NEWSLETTER====================== */
 .email-form {
     margin-left: auto;
     color: var(--main-background-section-button);
@@ -995,4 +995,4 @@ color: var(--primary-text-color);
 .email-form .input::placeholder {
     color: rgba(255, 255, 255, 0.3);
 }
-
+/* ========/SUBSCRIBE FOR THE NEWSLETTER====================== */
