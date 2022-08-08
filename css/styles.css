@@ -881,6 +881,7 @@ color: var(--primary-text-color);
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    color: var(--primary-text-color);
 }
 .modal-form-check:focus ~ .modal-form-check-desc {
     color: var(--logo-color-blue-blue);
