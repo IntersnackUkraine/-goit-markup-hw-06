@@ -792,12 +792,12 @@ color: var(--primary-text-color);
 }
 .modal-form-input-desc {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 4px;
-    color: #757575;
-    
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
 }
 
 .modal-form-input-wrapper {
@@ -808,7 +808,7 @@ color: var(--primary-text-color);
 .modal-form-input {
     width: 100%;
     height: 40px;
-    border: 1px solid #757575;
+    border: 1px solid var(--primary-text-color);
     border-radius: 4px;
     padding-left: 42px; 
     transition: border-color var(--transition-timing-function);
@@ -845,11 +845,8 @@ color: var(--primary-text-color);
     text-decoration: underline;
 }
 .modal-form-message {
-        overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
     width: 100%;
-    display: block;
+
     height: 100px;
     padding: 10px 16px;
     resize: none;
@@ -860,8 +857,8 @@ color: var(--primary-text-color);
 
 .modal-form-message::placeholder {
     font-size: 14px;
-    color: #757575;
-    text-transform: uppercase;
+    color: var(--primary-text-color);
+    /* text-transform: uppercase; */
     transition: border-color var(--transition-timing-function);
     transition: border-color var(--transition-duration);
 }
@@ -879,7 +876,7 @@ color: var(--primary-text-color);
     line-height: 24px;
     display: flex;
     align-items: center;
-    /* font-size: 12px; */
+    letter-spacing: 0.03em;
     margin-bottom: 20px;
     cursor: pointer;
     justify-content: center;
@@ -912,7 +909,7 @@ color: var(--primary-text-color);
 }
 .modal-form-submit {
     font-weight: 700;
-    border: none;
+    /* border: none; */
     padding: 10px 55px;
     border-radius: 4px;
     border-top-left-radius: 4px;
