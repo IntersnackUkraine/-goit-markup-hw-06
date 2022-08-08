@@ -845,8 +845,11 @@ color: var(--primary-text-color);
     text-decoration: underline;
 }
 .modal-form-message {
+        overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: 100%;
-    
+    display: block;
     height: 100px;
     padding: 10px 16px;
     resize: none;
@@ -909,7 +912,6 @@ color: var(--primary-text-color);
 }
 .modal-form-submit {
     font-weight: 700;
-    
     border: none;
     padding: 10px 55px;
     border-radius: 4px;
